@@ -17,5 +17,7 @@ print(scoup.title.string)
 tables = scoup.findAll('table')
 tab = tables[2]
 for tr in tab.findAll('tr'):
-    for td in tr.findAll('td'):
-        print(td.getText())
+    td = tr.findAll('td')
+    print(td.getText())
+    # for td in tr.findAll('td'):
+    #     print(td.getText())
