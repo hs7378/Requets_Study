@@ -22,3 +22,4 @@ for tr in tab.findAll('tr'):
     # print(td[0].getText())
     # for td in tr.findAll('td'):
     #     print(td.getText())
+print('SB')
