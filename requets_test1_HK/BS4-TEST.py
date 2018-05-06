@@ -14,6 +14,8 @@ scoup = BeautifulSoup(html,'lxml')
 print(scoup.title.string)
 # print(scoup.head)
 # print(scoup.p)
+for link in scoup.find_all('a'):
+    print(link.get('href'))
 tables = scoup.findAll('table')
 tab = tables[2]
 for tr in tab.findAll('tr'):
